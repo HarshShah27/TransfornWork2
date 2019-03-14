@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    height: 90%;
+    top: 35px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+}
+
+.first {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 80%;
+    width: 20%;
+    position: absolute;
+    background-color: black;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+
+}
+
+#frst {
+    position: absolute;
+    left: 15%;
+    background-color: black;
+    z-index: 111;
+}
+
+#scnd {
+    position: absolute;
+    left: 0;
+    background-color: blue;
+    right: 0;
+    margin: auto;
+    z-index: 11;
+    animation-name: rotate1;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+
+}
+
+#third {
+    position: absolute;
+    left: 65%;
+    background-color: aqua;
+    z-index: 1;
+    animation-duration: 2s;
+    animation-name: rotate2;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rotate {
+    0% {
+
+        transition-duration: 2s;
+        /*    background-col?or: azure;*/
+        transform: translate(300%, 0%) rotate3d(0, 0, -1, 90deg);
+        transform-origin: right top;
+    }
+    100% {}
+}
+
+@keyframes rotate1 {
+    0% {
+        transition-duration: 2s;
+        /*    background-col?or: azure;*/
+        transform: translate(300%, 30%) rotate3d(0, 0, -1, 90deg);
+        transform-origin: right top;
+    }
+    100% {}
+}
+
+@keyframes rotate2{
+    0% {
+        transition-duration: 2s;
+        /*    background-col?or: azure;*/
+        transform: translate(300%, 60%) rotate3d(0, 0, -1, 90deg);
+        transform-origin: right top;
+    }
+}

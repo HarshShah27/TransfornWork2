@@ -1,0 +1,98 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: aliceblue;
+    /*    position: relative;*/
+}
+
+.div {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*    margin: 0;*/
+    background-color: red;
+    /*    position: relative;*/
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    /*    animation-direction: alternate;*/
+    /*    animation-play-state: running;*/
+    ani
+    /*    animation-iteration-count:;*/
+}
+
+@keyframes move {
+    0% {
+        background-color: red;
+        left: 0%;
+    }
+    5% {
+        left: calc(100% - 100px);
+        top: 0;
+    }
+    10% {
+        top: calc(100% - 100px);
+        /*        bottom: 0%;*/
+        /*        right: 0%;*/
+        left: calc(100% - 100px);
+    }
+    15% {
+        left: 0%;
+        top: calc(100% - 100px);
+    }
+    20% {
+        top: calc(0% + 100px);
+        left: 0%;
+    }
+    25% {
+        top: calc(0% + 100px);
+        left: calc(100% - 200px);
+    }
+    30% {
+        left: calc(100% - 200px);
+        top: calc(100% - 200px);
+    }
+    35% {
+        top: calc(100% - 200px);
+        left: calc(0% + 200px);
+    }
+    40% {
+        left: calc(0% + 200px);
+        top: calc(0% + 200px);
+    }
+    45% {
+        top: calc(0% + 200px);
+        left: calc(100% - 300px);
+    }
+    50% {
+        top: calc(100% - 300px);
+        left: calc(100% - 300px);
+    }
+
+    60% {
+        top: calc(100% - 300px);
+        left: calc(100% - 750px);
+
+    }
+
+
+
+    100% {
+        transform-origin: center;
+        top: calc(50%);
+        left: calc(50%);
+        background-color: blue;
+    }
+
+}
